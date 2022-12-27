@@ -9,9 +9,6 @@ export default NextAuth({
     }),
   ],
   secret: process.env.JWT_SECRET,
-  pages: {
-    signIn: "/auth/sigin",
-  },
   callbacks: {
     async session({ session, token }) {
       if (session.user) {

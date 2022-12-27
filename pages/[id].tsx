@@ -84,7 +84,7 @@ export default function PostPage({
             <Post id={id as string} post={post} postPage />
             {comments.length > 0 && (
               <div className="pb-72">
-                {comments.map((comment) => (
+                {comments.map((comment: any) => (
                   <Comment
                     key={comment.id}
                     id={comment.id}

@@ -11,7 +11,7 @@ const Trending = ({ result }: any) => {
         </h6>
         <p className="text-[#6e767d] text-xs font-medium">
           Trending with{" "}
-          {result.tags.map((tag, index) => (
+          {result.tags.map((tag: any, index: number) => (
             <span key={index} className="tag">
               {tag}
             </span>
