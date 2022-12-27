@@ -1,0 +1,17 @@
+[
+  {
+    "userImg": "https://www.spacex.com/static/images/share.jpg",
+    "username": "SpaceX",
+    "tag": "@SpaceX"
+  },
+  {
+    "userImg": "https://www.admiddleeast.com/2021/06/spacecraft.jpg",
+    "username": "Elon Musk",
+    "tag": "@elonmusk"
+  },
+  {
+    "userImg": "https://imgur.com/3ZwiOeu.png",
+    "username": "Tesla",
+    "tag": "@Tesla"
+  }
+]
