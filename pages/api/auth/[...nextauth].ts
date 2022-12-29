@@ -8,17 +8,17 @@ export default NextAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     }),
   ],
-  secret: process.env.JWT_SECRET,
+  secret: process.env.JWT_SECRET as string,
   callbacks: {
-    async session({ session, token }) {
-      if (session.user) {
-        session.user.tag = session.user?.name
-          ?.split(" ")
-          .join("")
-          .toLocaleLowerCase();
-        session.user.uid = token.sub;
-      }
-      return session;
-    },
+    // async session({ session, token }) {
+    //   if (session.user) {
+    //     session.user.tag = session.user?.name
+    //       ?.split(" ")
+    //       .join("")
+    //       .toLocaleLowerCase();
+    //     session.user.uid = token.sub;
+    //   }
+    //   return session;
+    // },
   },
 });
